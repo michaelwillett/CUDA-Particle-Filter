@@ -697,7 +697,7 @@ void particleFilter(uchar4 *pbo, int frame, Lidar *lidar) {
 	avg_sample += (std::chrono::duration_cast<std::chrono::microseconds> (end - start)).count();
 	start = end;
 
-	if (frame % 100 == 0) {
+	if (frame % 100 == -1) {
 		cout << "Frame " << frame << ":" << endl;
 		printf("    motion:      %3.2f\n", avg_motion / 100.0f);
 		printf("    measurement: %3.2f\n", avg_measurement / 100.0f);

@@ -70,6 +70,7 @@ allows for processing a large sample space in real time with additional headroom
 readings, however, accuracy improvements appear negligible for loop-closure.
 
 <img src="images/runtime.png" width="300" alt="runtime"  style="margin: auto;display: block;">
+<img src="images/throughput.png" width="600" alt="throughput by particle count"  style="margin: auto;display: block;">
 
 *Note: unfortunately NVidia NSight Analysis does not properly load matlab libraries, so detailed thread performance could not be without
 refactoring the data import code*
